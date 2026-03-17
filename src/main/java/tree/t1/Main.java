@@ -1,4 +1,4 @@
-package tree;
+package tree.t1;
 
 public class Main {
 

@@ -8,8 +8,6 @@ public class Maximum_SubArray_Sum {
         int currentSum = arr[0];
 
         for (int i = 1; i < arr.length; i++) {
-
-
             currentSum = Math.max(currentSum + arr[i], arr[i]);
             maxSum = Math.max(maxSum, currentSum);
         }

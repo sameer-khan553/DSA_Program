@@ -1,20 +1,22 @@
-package linkedListProgram;
+package linkedListProgram.l2;
+
+import linkedListProgram.l1.Node1;
 
 public class LinkedList2 {
 
-    static Node head = null;
+    static Node1 head = null;
 
     public static void addRear(int data){
-      Node newNode = new Node(data);
+      Node1 newNode1 = new Node1(data);
       if(head == null){
-          head = newNode;
+          head = newNode1;
           return;
       }
-      Node temp = head;
+      Node1 temp = head;
       while(temp.next != null){
           temp = temp.next;
       }
-        temp.next = newNode;
+        temp.next = newNode1;
     }
 
 
@@ -24,7 +26,7 @@ public class LinkedList2 {
                 System.out.println("List is empty");
                 return;
             }
-            Node temp = head;
+            Node1 temp = head;
 
             while(temp != null){
                 System.out.print(temp.data + " ");
@@ -38,17 +40,10 @@ public class LinkedList2 {
 
 
     static void addFront(int data){
-        Node newNode = new Node(data);
-        newNode.next = head;
-        head = newNode;
+        Node1 newNode1 = new Node1(data);
+        newNode1.next = head;
+        head = newNode1;
     }
-
-
-
-
-
-
-
 
 
 
@@ -70,13 +65,13 @@ public class LinkedList2 {
             return;
         }
 
-        Node newNode = new Node(data);
-        Node temp = head;
+        Node1 newNode1 = new Node1(data);
+        Node1 temp = head;
         for(int i = 0; i < index-1; i++){
             temp = temp.next;
         }
-        newNode.next = temp.next;
-        temp.next = newNode;
+        newNode1.next = temp.next;
+        temp.next = newNode1;
     }
 
     static void deleteFront(){
@@ -88,7 +83,7 @@ public class LinkedList2 {
     }
 
     static void deleteRear(){
-        Node  temp = head;
+        Node1 temp = head;
         while(temp.next.next != null){
             temp = temp.next;
         }

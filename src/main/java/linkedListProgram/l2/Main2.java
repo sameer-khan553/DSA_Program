@@ -1,6 +1,6 @@
-package linkedListProgram;
+package linkedListProgram.l2;
 
-public class Program1 {
+public class Main2 {
 
     public static void main(String[] args) {
 

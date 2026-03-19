@@ -1,4 +1,4 @@
-package tree.t1;
+package Tree.T1;
 
 public class Node {
 

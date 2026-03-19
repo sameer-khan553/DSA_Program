@@ -1,8 +1,8 @@
-package linkedListProgram;
+package linkedListProgram.l1;
 
-public class Main {
+public class Main1 {
     public static void main(String[] args) {
-        LinkedList list = new LinkedList();
+        LinkedList1 list = new LinkedList1();
         list.insertRear(5);
         list.insertRear(6);
         list.insertRear(7);

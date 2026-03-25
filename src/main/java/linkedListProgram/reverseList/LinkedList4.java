@@ -30,8 +30,13 @@ public class LinkedList4 {
     }
     public void reversePrint() {
         Node current = head;
-        while (current != null) {
-
+        Node prev = null;
+        while (current != null ) {
+          Node temp= current.next;
+          current.next = prev;
+          prev = current;
+          current = temp;
         }
+        head=prev;
     }
 }

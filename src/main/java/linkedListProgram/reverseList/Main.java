@@ -26,5 +26,8 @@ public class Main {
 
         System.out.println("Original List");
         ll.print();
+        ll.reversePrint();
+        System.out.println("Reversed List");
+        ll.print();
     }
 }

@@ -27,7 +27,10 @@ public class TripleSum_With_Zero {
                 else if(sum < 0) low++;
                 else high--;
             }
+            System.out.println(arr[i] + arr[low] + arr[high]);
         }
+
+
         return false;
     }
 

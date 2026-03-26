@@ -29,8 +29,6 @@ public class TripleSum_With_Zero {
             }
             System.out.println(arr[i] + arr[low] + arr[high]);
         }
-
-
         return false;
     }
 

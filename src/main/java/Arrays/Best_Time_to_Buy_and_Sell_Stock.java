@@ -4,10 +4,10 @@ public class Best_Time_to_Buy_and_Sell_Stock {
     public static void main(String[] args) {
         int [] arr = {7, 1, 5, 3, 6, 4};;
 
-        m1(arr);
+        System.out.println(m1(arr));
     }
 
-    public static  void m1(int [] arr){
+    public static  int m1(int [] arr){
 
         int minBuy = Integer.MAX_VALUE;
         int maxProfit = 0;
@@ -23,8 +23,6 @@ public class Best_Time_to_Buy_and_Sell_Stock {
                 maxProfit = profit;
             }
         }
-
-        System.out.println("Minimum buy: " + minBuy);
-        System.out.println("max profit: " + maxProfit);
+            return maxProfit ;
     }
 }

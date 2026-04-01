@@ -7,8 +7,8 @@ public class MergeSortedArray {
         int[] nums1 = {1, 2, 3, 0, 0, 0};
         int[] nums2 = {2, 5, 6};
 
-        int m = 3;
-        int n = 3;
+        int m = nums1.length;
+        int n = nums2.length;
 
         merge(nums1, m, nums2,  n);
     }
